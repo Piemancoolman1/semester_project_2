@@ -1,0 +1,21 @@
+/********************************************************
+ * CSS file for example
+ ********************************************************/
+
+html {
+	background-color: aliceblue;
+	color: midnightblue;
+}
+
+div	{
+	font-size: 130%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+span {
+display: inline-block;
+border: 3px solid maroon;
+}
