@@ -1,82 +1,169 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Search App</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <link rel="stylesheet" href="SearchApp.css">
-  <script src="main.js"></script>
-</head>
-<body>
-  <div id="searchPage">
-    <h1>Search App</h1>
-    
-    <!--Form for issue and starting point of the user-->
-    <form>
-      <!--Issue that user is having (text-based)-->
-      <label for="searchStr">What do you need help with?</label>
-      <br>
-      <br>
-      <input type="text" id="searchStr" name="searchStr" placeholder="Issue here">
-      <!--Where the user is starting from (drop-down menu)-->
-      <select id="startingPoint" name="startingPoint">
-        <option value="" disabled selected hidden>Choose your starting point</option>
-        <!--Values are associated with the map number-->
-        <optgroup label="Academic & Administrative">
-          <option value="1">Lillian E. Dimmitt Alumni House</option>
-          <option value="2">Buhler Rohlfs Hall</option>
-          <option value="3">Charles City College Hall</option>
-          <option value="4">Eugene C. Eppley Fine Arts Building</option>
-          <option value="5">Hindman-Hobbs Center (HPER)</option>
-          <option value="6">Klinger-Neal Theatre</option>
-          <option value="7">Krone Center</option>
-          <option value="8">Hickman-Johnson-Furrow Learning Center (LIBR)</option>
-          <option value="9">Lewis Hall</option>
-          <option value="10">Robert M. Lincoln Center</option>
-          <option value="11">Rosen AG Center & Lags Greenhouse</option>
-          <option value="12">MacCollin Classroom Building</option>
-          <option value="13">Physical Plant Building</option>
-          <option value="14">Olsen Student Center</option>
-          <option value="15">James and Sharon Walker Science Center</option>
-        </optgroup>
-        <optgroup label="Residence Halls">
-          <option value="16">Dimmitt Residence Hall</option>
-          <option value="17">Lags Hall</option>
-          <option value="18">Poppen Apartments</option>
-          <option value="19">Roadman Hall</option>
-          <option value="20">Residence Complex</option>
-          <option value="21">Waitt Apartments</option>
-          <option value="22">Garretson House</option>
-        </optgroup>
-        <optgroup label="Athletic Facilities">
-          <option value="23">Bass Field</option>
-          <option value="24">Rosen Field</option>
-          <option value="25">Elwood Olsen Stadium</option>
-          <option value="26">Rosen Verdoom Sports Center/Allee Gymnasium</option>
-          <option value="27">Elizabeth and Irving Jensen Softball Complex</option>
-          <option value="28">Mason Family Tennis Complex</option>
-          <option value="29">Field Events Center</option>
-        </optgroup>
-        <optgroup label="Outdoor Areas">
-          <option value="30">Arnold Student Plaza</option>
-          <option value="31">Buhler Outdoor Performance Center</option>
-          <option value="32">Campus Garden</option>
-          <option value="33">Kline Family Pergola</option>
-          <option value="34">Lewis Park</option>
-          <option value="35">Lieder Family Fountain</option>
-          <option value="36">Spoonholder Bench</option>
-          <option value="37">Hilker Campus Mall</option>
-        </optgroup>
-
-      </select>
-      <button type = "button" onClick="inputFunction()">Get Directions</button>
-      <span id="howMuch"></span>
-    </div>
-    <div id="infoPage">
-      <h1>DEPARTMENT: <span id="department"></span></h1>
-      <h1>LOCATION: <span id="location"></span></h1>
-      <h1>INDIVIDUAL: <span id="people"></span></h1>
-      <h1>PHONE: <span id="phone"></span></h1>
-    </div>
-  </form>
-</body>
-</html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+        <title> Quiz </title>
+        <link rel="stylesheet" href="Radio.css">
+        <script defer src="Radio.js"></script>
+    </head>
+    <body>
+      <h2> Quiz About Video Games </h2>
+      <hr>
+      <ol>
+        <li>
+          <!-- Stardew -->
+      <div id="Q1">
+        <h4> How many people worked on the video game "Stardew Valley"? </h4>
+          <br>
+        <input id="A1R" class="Answer" type="radio" name="Ques1" value="Correct">
+          <label for="A1R">One Person </label> <br>
+        <input id="A2W" class="Answer" type="radio" name="Ques1" value="Wrong">
+          <label for="A2W"> Twenty People </label> <br>
+        <input id="A3W" class="Answer" type="radio" name="Ques1" value="Wrong">
+          <label for="A3W"> Nine People </label> <br>
+        <input id="A4W" class="Answer" type="radio" name="Ques1" value="Wrong">
+          <label for="A4W"> Thirty People </label>
+      </div>
+      </li><li>
+        <!-- Hollow Knight -->
+        <div id="Q2">
+          <h4> How many hours does it take to complete the entire game of Hollow Knight? </h4>
+          <br>
+          <input id="B1W" class="Answer" type="radio" name="Ques2" value="Wrong">
+            <label for="B1W"> 45 Hours </label> <br>
+          <input id="B2W" class="Answer" type="radio" name="Ques2" value="Wrong">
+            <label for="B2W"> 21 Hours </label> <br>
+          <input id="B3R" class="Answer" type="radio" name="Ques2" value="Correct">
+            <label for="B3R"> 48 Hours  </label> <br>
+          <input id="B4W" class="Answer" type="radio" name="Ques2" value="Wrong">
+            <label for="B4W"> 15 Hours </label> <br>
+        </div>
+      </li><li>
+        <!-- Animal Crossing -->
+        <div id="Q3">
+          <h4> How many copies of Animal Crossing: New Horizens where sold? </h4>
+          <br>
+          <input id="C1W" class="Answer" type="radio" name="Ques3" value="Wrong">
+            <label for="C1W"> 12 Million </label> <br>
+          <input id="C2W" class="Answer" type="radio" name="Ques3" value="Wrong">
+            <label for="C2W"> 21 Million </label> <br>
+          <input id="C3R" class="Answer" type="radio" name="Ques3" value="Correct">
+            <label for="C3R"> 31 Million </label> <br>
+          <input id="C4W" class="Answer" type="radio" name="Ques4" value="Wrong">
+            <label for="C4W"> 51 Million </label> <br>
+        </div>
+      </li><li>
+        <!-- Pokemon -->
+        <div id="Q4">
+          <h4> How many Pokemon are there between all games and generations? </h4>
+          <br>
+          <input id="D1W" class="Answer" type="radio" name="Ques4" value="Wrong">
+            <label for="D1W"> 1042 </label> <br>
+            <input id="D2R" class="Answer" type="radio" name="Ques4" value="Correct">
+            <label for="D2R"> 898 </label> <br>
+          <input id="D3W" class="Answer" type="radio" name="Ques4" value="Wrong">
+            <label for="D3W"> 635 </label> <br>
+          <input id="D4W" class="Answer" type="radio" name="Ques4" value="Wrong">
+            <label for="D4W"> 989 </label> <br>
+        </div>
+      </li> <li>
+        <!-- Mario -->
+        <div id="Q5">
+          <h4> When did the first Mario game come out? </h4>
+          <br>
+          <input id="E1W" class="Answer" type="radio" name="Ques5" value="Wrong">
+            <label for="E1W"> 4/14/1989 </label> <br>
+          <input id="E2R" class="Answer" type="radio" name="Ques5" value="Correct">
+            <label for="E2R"> 11/13/1985 </label> <br>
+          <input id="E3W" class="Answer" type="radio" name="Ques5" value="Wrong">
+            <label for="E3W"> 7/6/1987 </label> <br>
+          <input id="E4W" class="Answer" type="radio" name="Ques5" value="Wrong">
+            <label for="E4W"> 8/9/1972 </label> <br>
+        </div>
+      </li> <li>
+        <!-- Sonic -->
+        <div id="Q6">
+          <h4> What is Sonic the hedgehogs orginal name? </h4>
+          <br>
+          <input id="F1W" class="Answer" type="radio" name="Ques6" value="Wrong">
+            <label for="F1W"> Sean </label> <br>
+          <input id="F2W" class="Answer" type="radio" name="Ques6" value="Wrong">
+            <label for="F2W"> Manic </label> <br>
+          <input id="F3W" class="Answer" type="radio" name="Ques6" value="Wrong">
+            <label for="F3W"> Alex </label> <br>
+          <input id="F4R" class="Answer" type="radio" name="Ques6" value="Correct">
+            <label for="F4R"> Sonny </label> <br>
+        </div>
+      </li> <li>
+        <!-- Minecraft -->
+      <div id="Q7">
+        <h4> What was the orginal creeper model ment to be? </h4>
+        <br>
+        <input id="G1R" class="Answer" type="radio" name="Ques7" value="Correct">
+          <label for="G1R"> Pig </label> <br>
+        <input id="G2W" class="Answer" type="radio" name="Ques7" value="Wrong">
+          <label for="G2W"> Cow </label> <br>
+        <input id="G3W" class="Answer" type="radio" name="Ques7" value="Wrong">
+          <label for="G3W"> Horse </label> <br>
+        <input id="G4W" class="Answer" type="radio" name="Ques7" value="Wrong">
+          <label for="G4W"> Sheep </label> <br>
+      </div>
+      </li><li>
+        <!-- Spyro the Dragon -->
+        <div id="Q8">
+          <h4> What color was Spyro orginally? </h4>
+          <br>
+          <input id="H1W" class="Answer" type="radio" name="Ques8" value="Wrong">
+            <label for="H1W"> Yellow </label> <br>
+          <input id="H2W" class="Answer" type="radio" name="Ques8" value="Wrong">
+            <label for="H2W"> Pink </label> <br>
+          <input id="H3R" class="Answer" type="radio" name="Ques8" value="Correct">
+            <label for="H3R"> Green </label> <br>
+          <input id="H4W" class="Answer" type="radio" name="Ques8" value="Wrong">
+            <label for="H4W"> Black </label> <br>
+        </div>
+      </li><li>
+        <!-- Super Smash Bros -->
+        <div id="Q9">
+          <h4> How many characters are in Smash Bros? </h4>
+          <br>
+          <input id="I1W" class="Answer" type="radio" name="Ques9" value="Wrong">
+            <label for="I1W"> 75 </label> <br>
+          <input id="I2W" class="Answer" type="radio" name="Ques9" value="Wrong">
+            <label for="I2W"> 24 </label> <br>
+          <input id="I3R" class="Answer" type="radio" name="Ques9" value="Correct">
+            <label for="I3R"> 65 </label> <br>
+          <input id="I4W" class="Answer" type="radio" name="Ques9" value="Wrong">
+            <label for="I4W"> 82 </label> <br>
+        </div>
+      </li><li>
+        <!-- Fallout -->
+        <div id="Q10">
+          <h4> In the Fallout games what vault do ghouls come from? </h4>
+          <br>
+          <input id="J1R" class="Answer" type="radio" name="Ques10" value="Correct">
+            <label for="J1R"> Vault 12 </label> <br>
+          <input id="J2W" class="Answer" type="radio" name="Ques10" value="Wrong">
+            <label for="J2W"> Vault 3 </label> <br>
+          <input id="J3W" class="Answer" type="radio" name="Ques10" value="Wrong">
+            <label for="J3W"> Vault 111 </label> <br>
+          <input id="J4W" class="Answer" type="radio" name="Ques10" value="Wrong">
+            <label for="J4W"> Vault 34 </label> <br>
+        </div>
+      </li>
+      </ol>
+     <button type="button" id="Check"> Check Answers </button>
+     <div id="Results">
+       <span id="Q1R"> </span> <br>
+       <span id="Q2R"> </span> <br>
+       <span id="Q3R"> </span> <br>
+       <span id="Q4R"> </span> <br>
+       <span id="Q5R"> </span> <br>
+       <span id="Q6R"> </span> <br>
+       <span id="Q7R"> </span> <br>
+       <span id="Q8R"> </span> <br>
+       <span id="Q9R"> </span> <br>
+       <span id="Q10R"> </span> <br>
+     </div>
+    </body>
+  </html>
