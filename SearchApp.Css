@@ -1,3 +1,48 @@
+body{
+    background-color:rgb(242, 226, 213);
+}
+
 #infoPage{
     display:none;
+}
+
+#searchStr{
+    text-align: center;
+    width: 250px;
+}
+
+#searchPage{
+height: 250px;
+width: 600px;
+position: fixed;
+top: 100px;
+left: 400px;
+text-align: center;
+background-color: white;
+border: 10px;
+border-style: solid;
+border-color:rgb(92, 6, 16) ;
+}
+
+#startingPoint{
+    text-align: center;
+}
+
+#button1{
+display: inline-block;
+background: url(button.png);
+color: whitesmoke;
+border: none;
+width: 80px;
+height: 30px;
+text-align: center;
+margin-left: 20px;
+border-radius: 10px;
+cursor: pointer;
+}
+
+
+
+.round{
+border-radius: 25px;
 }
