@@ -17,17 +17,23 @@ const phone = ["5103, 5388, 5274", "5166", "5034", "5314", "5371", "5133", "5148
                "5178", "5034", "5116", "5161", "5263", "5031", "5142", "5544", "5191", "5109", "5036", "5008", "5031"]
 var searchStr; 
 //Array of images
-var imgs = ["http://logok.org/wp-content/uploads/2014/03/abc-gold-logo.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/779px-NBC_logo.svg.png",
-            "https://s-media-cache-ak0.pinimg.com/originals/96/e6/d9/96e6d9e141ac42bf9aad1aaae0a15c61.jpg", 
-            "http://fontmeme.com/images/CNN-Logo.jpg",
-            "http://logok.org/wp-content/uploads/2014/12/TBS-logo-blue.png",
-            "http://www.doddlenews.com/wp-content/uploads/2012/05/fox-tv-logo.jpg"];
+let imgs = [
+            ["http://logok.org/wp-content/uploads/2014/03/abc-gold-logo.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/779px-NBC_logo.svg.png"],
+            ["https://s-media-cache-ak0.pinimg.com/originals/96/e6/d9/96e6d9e141ac42bf9aad1aaae0a15c61.jpg", "http://fontmeme.com/images/CNN-Logo.jpg"],
+            ["http://logok.org/wp-content/uploads/2014/12/TBS-logo-blue.png", "http://www.doddlenews.com/wp-content/uploads/2012/05/fox-tv-logo.jpg"]
+        ];
+let walk =[
+    ["http://logok.org/wp-content/uploads/2014/03/abc-gold-logo.png","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/779px-NBC_logo.svg.png"],
+    ["https://s-media-cache-ak0.pinimg.com/originals/96/e6/d9/96e6d9e141ac42bf9aad1aaae0a15c61.jpg", "http://fontmeme.com/images/CNN-Logo.jpg"],
+    ["http://logok.org/wp-content/uploads/2014/12/TBS-logo-blue.png", "http://www.doddlenews.com/wp-content/uploads/2012/05/fox-tv-logo.jpg"]
+];
 console.log(searchStr)
 document.querySelector("#searchPage").style.display = "block"
 document.querySelector("#infoPage").style.display = "none"
 function inputFunction() {
-    var img = document.getElementById("ImageArea");
+    var img = document.getElementById("myImage");
+    var j = document.getElementById("startingPoint").value;
+    console.log(j);
     searchStr = document.getElementById('searchStr').value
     document.querySelector("#searchPage").style.display = "none"
     document.querySelector("#infoPage").style.display = "block"
@@ -39,8 +45,8 @@ function inputFunction() {
             document.getElementById("people").innerHTML = people[i];
             document.getElementById("phone").innerHTML = phone[i];
             //Changing image based on index
-            img.src = imgs[i];
-            img.alt = imgs[i];
+            img.src = imgs[j][i];
+            img.alt = imgs[j][i];
         } 
     }
 }
