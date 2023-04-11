@@ -9,7 +9,6 @@
 <body>
   <div id="searchPage" class="round">
     <h1>Search App</h1>
-    
     <!--Form for issue and starting point of the user-->
     <form>
       <!--Issue that user is having (text-based)-->
@@ -70,13 +69,24 @@
       </select>
       <button type = "button" onClick="inputFunction()" id="button1" >Get Directions</button>
       <span id="howMuch"></span>
-    </div>
+    </form>
+  </div>
     <div id="infoPage">
-      <h1>DEPARTMENT: <span id="department"></span></h1>
-      <h1>LOCATION: <span id="location"></span></h1>
-      <h1>INDIVIDUAL: <span id="people"></span></h1>
-      <h1>PHONE: <span id="phone"></span></h1>
+      <div id="Info" class="Dis">
+       <p>DEPARTMENT: <span id="department"></span> <br>
+        LOCATION: <span id="location"></span><br>
+        INDIVIDUAL: <span id="people"></span><br>
+        PHONE: <span id="phone"></span></p>
+      </div>
+    <div id="Map" class="Dis">
+
     </div>
+    <div id="Images" class="Dis">
+      <button type="button" id="leftButton"> < </button>
+      <button typr="button" id="rightButton"> > </button>
+      </button>
+    </div>
+  </div>
   </form>
 </body>
 </html>
