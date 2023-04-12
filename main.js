@@ -15,7 +15,9 @@ const people = ["Chris Spicer, Brian McFarland, Jen Dolphin", "Regina Bade", "Be
                 "Alex Watters", "David Elder", "Student Life Office"]
 const phone = ["5103, 5388, 5274", "5166", "5034", "5314", "5371", "5133", "5148", "5234", "5032", "5034", "5606", "5159", "5303", 
                "5178", "5034", "5116", "5161", "5263", "5031", "5142", "5544", "5191", "5109", "5036", "5008", "5031"]
-var searchStr; 
+var searchStr;
+var peopleCurrentVarStr = ""
+var phoneNumberStr = ""
 //Array of images
 let imgs = [
             ["http://logok.org/wp-content/uploads/2014/03/abc-gold-logo.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/779px-NBC_logo.svg.png"],
@@ -38,12 +40,15 @@ function inputFunction() {
     document.querySelector("#searchPage").style.display = "none"
     document.querySelector("#infoPage").style.display = "block"
     //const searchStrArray = searchStr.split(" ")
-    for (let i = 0; i < keyWords.legnth(); i++) {
+    for (let i = 0; i < keyWords.length; i++) {
         if (searchStr === keyWords[i]) {
-            document.getElementById("department").innerHTML = department[i];
-            document.getElementById("location").innerHTML = locationA[i];
-            document.getElementById("people").innerHTML = people[i];
-            document.getElementById("phone").innerHTML = phone[i];
+            peopleCurrentVarStr = people[i]
+            phoneNumberStr = phone[i]
+            peopleCurrentVarStr.setA
+            document.getElementById("department").innerHTML = department[i]
+            document.getElementById("location").innerHTML = locationA[i]
+            document.getElementById("people").innerHTML = peopleCurrentVarStr.replace(/,/g, "<br>")
+            document.getElementById("phone").innerHTML = phoneNumberStr.replace(/,/g, "<br />")
             //Changing image based on index
             img.src = imgs[j][i];
             img.alt = imgs[j][i];
