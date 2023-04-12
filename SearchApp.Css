@@ -106,3 +106,7 @@ float: left;
     margin-right: 15px;
     color: rgb(92, 6, 16);
 }
+
+h1.a{
+    text-decoration: underline;
+}
