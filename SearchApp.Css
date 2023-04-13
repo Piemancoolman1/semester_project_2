@@ -80,6 +80,7 @@ border: rgb(92, 6, 16) solid 3px;
 
 #Text{
     font-size:24px ;
+    text-decoration: underline;
 }
 
 /* Map */
