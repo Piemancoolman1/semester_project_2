@@ -162,7 +162,7 @@ console.log(searchStr)
 document.querySelector("#searchPage").style.display = "block"
 document.querySelector("#infoPage").style.display = "none"
 function inputFunction() {
-    var img = document.getElementById("ImagesDiv");
+    var img = document.getElementById("myImage");
     var j = document.getElementById("startingPoint").value;
     console.log(j);
     searchStr = document.getElementById('searchStr').value
