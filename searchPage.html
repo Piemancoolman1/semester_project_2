@@ -22,32 +22,49 @@
         <option value=""  disabled selected hidden>Choose your starting point</option>
         <!--Values are associated with the map number-->
         <optgroup label="Academic & Administrative">
-          <option value="0">Buhler Rohlfs Hall</option>
-          <option value="1">Charles City College Hall</option>
-          <option value="2">Eugene C. Eppley Fine Arts Building</option>
-          <option value="3">Hindman-Hobbs Center (HPER)</option>
-          <option value="4">Klinger-Neal Theatre</option>
-          <option value="5">Krone Center</option>
-          <option value="6">Hickman-Johnson-Furrow Learning Center (LIBR)</option>
-          <option value="7">Lewis Hall</option>
-          <option value="8">Robert M. Lincoln Center</option>
-          <option value="9">Rosen AG Center & Lags Greenhouse</option>
-          <option value="10">MacCollin Classroom Building</option>
-          <option value="11">Physical Plant Building</option>
-          <option value="12">Olsen Student Center</option>
-          <option value="13">James and Sharon Walker Science Center</option>
+          <option value="1">Lillian E. Dimmitt Alumni House</option>
+          <option value="2">Buhler Rohlfs Hall</option>
+          <option value="3">Charles City College Hall</option>
+          <option value="4">Eugene C. Eppley Fine Arts Building</option>
+          <option value="5">Hindman-Hobbs Center (HPER)</option>
+          <option value="6">Klinger-Neal Theatre</option>
+          <option value="7">Krone Center</option>
+          <option value="8">Hickman-Johnson-Furrow Learning Center (LIBR)</option>
+          <option value="9">Lewis Hall</option>
+          <option value="10">Robert M. Lincoln Center</option>
+          <option value="11">Rosen AG Center & Lags Greenhouse</option>
+          <option value="12">MacCollin Classroom Building</option>
+          <option value="13">Physical Plant Building</option>
+          <option value="14">Olsen Student Center</option>
+          <option value="15">James and Sharon Walker Science Center</option>
         </optgroup>
         <optgroup label="Residence Halls">
-          <option value="14">Dimmitt Residence Hall</option>
-          <option value="15">Lags Hall</option>
-          <option value="16">Poppen Apartments</option>
-          <option value="17">Roadman Hall</option>
-          <option value="18">Residence Complex</option>
-          <option value="19">Waitt Apartments</option>
-          <option value="20">Garretson House</option>
+          <option value="16">Dimmitt Residence Hall</option>
+          <option value="17">Lags Hall</option>
+          <option value="18">Poppen Apartments</option>
+          <option value="19">Roadman Hall</option>
+          <option value="20">Residence Complex</option>
+          <option value="21">Waitt Apartments</option>
+          <option value="22">Garretson House</option>
         </optgroup>
         <optgroup label="Athletic Facilities">
-          <option value="22">Rosen Verdoom Sports Center/Allee Gymnasium</option>
+          <option value="23">Bass Field</option>
+          <option value="24">Rosen Field</option>
+          <option value="25">Elwood Olsen Stadium</option>
+          <option value="26">Rosen Verdoom Sports Center/Allee Gymnasium</option>
+          <option value="27">Elizabeth and Irving Jensen Softball Complex</option>
+          <option value="28">Mason Family Tennis Complex</option>
+          <option value="29">Field Events Center</option>
+        </optgroup>
+        <optgroup label="Outdoor Areas">
+          <option value="30">Arnold Student Plaza</option>
+          <option value="31">Buhler Outdoor Performance Center</option>
+          <option value="32">Campus Garden</option>
+          <option value="33">Kline Family Pergola</option>
+          <option value="34">Lewis Park</option>
+          <option value="35">Lieder Family Fountain</option>
+          <option value="36">Spoonholder Bench</option>
+          <option value="37">Hilker Campus Mall</option>
         </optgroup>
 
       </select>
@@ -60,21 +77,20 @@
         <div id="Decor" class="Dis"> 
         <p id="Info"> Information</p>
       </div>
-       <p id="Text">Department:<br> <span id="department"></span> <br>
-        Location:<br> <span id="location"></span><br>
-        Individual: <br><span id="people"></span><br>
-        Phone:<br> <span id="phone"></span></p>     
+       <p class="Text"> Department: </p>  <span id="department"></span> <br>
+       <p class="Text"> Location:</p>  <span id="location"></span><br>
+       <p class="Text">Individual:</p> <span id="people"></span><br>
+        <p class="Text">Phone: </p> <span id="phone"></span>    
       </div>
     <div id="MapDiv" class="Dis">
-      <img src = "AGtoBR.png" id = "ImagesDiv">
+
     </div>
     <div id="ImagesDiv" class="Dis">
         <img src="Test1.png" alt="Images">
-       <button type="button" id="leftButton"> < </button>
+       <button type="button" id="leftButton" onclick="TestNext"> < </button>
       <button typr="button" id="rightButton"> > </button>
       </button>
     </div>
   </div>
   </form>
 </body>
-</html>
