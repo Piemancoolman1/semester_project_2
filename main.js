@@ -197,7 +197,7 @@ if (word === "University Engagement") {
     document.getElementById("phone").innerHTML = "5411 5440 5108";
 }
 if (word === "University Engagement") {
-     document.getElementById("department").innerHTML = "University Engagement";
+    document.getElementById("department").innerHTML = "University Engagement";
     document.getElementById("location").innerHTML = "Physical Plant Bldg. Gaphic Design, Business Cards, Other Marketing services Mailroom Printing";
     document.getElementById("people").innerHTML = "Randee Small, Lauretta Shaver";
     document.getElementById("phone").innerHTML = "5262 5198";
