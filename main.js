@@ -141,10 +141,10 @@ function inputFunction() {
     var img = document.getElementById("myImage");
     var j = document.getElementById("startingPoint").value;
     console.log(j);
-    searchStr = document.getElementById('searchStr').value
+    searchStr = document.getElementById('searchStr').value.toLowerCase
     document.querySelector("#searchPage").style.display = "none"
     document.querySelector("#infoPage").style.display = "block"
-    //const searchStrArray = searchStr.split(" ")
+    const searchStrArray = searchStr.split(" ")
     for (let i = 0; i < keyWords.length; i++) {
         if (searchStr === keyWords[i]) {
             peopleCurrentVarStr = people[i]
