@@ -2,6 +2,35 @@ const keyWords = ["Academics",  "Academic Support Center ", "Advising", "Athleti
                   "Career Services", "Disabilities Services", "Emotional or Personal Concerns", "Financial Aid", "Food Service", "Health Services", "International Students", 
                   "Maintenance", "Residence Life", "Student Accounts", "Student Life Issues", "Student Payroll", "Study Abroad", "Technology", "Title IX Coordinator", 
                   "Transcript Request/Registrar", "University Engagement", "Writing Center", "Withdraw/Exit From College"]
+let termsOfKeyWords = [
+    ["finale"], //Academics
+    ["tutoring", "math", "school"], //ASC
+    ["advising", "add", "dropping", "graduate"], //Advising
+    ["blank"], //Athletic Injuires
+    ["sports"], //Athletics
+    ["book", "bookstore"], //Bookstore
+    ["ministry"], //Campus Ministry
+    ["safety", "security", "ticket", "parking"], //Campus Saftey and Security
+    ["job", "internship"], //Career Services
+    ["disabled", "501", "disability", "allergies", "dyslexia"], //Disabilities Services
+    ["blank"], //Emotional or Personal Concerns
+    ["aid", "loan", "scholarship"], //Financial Aid
+    ["Food Service", "flex", "points", "meal", "plan", "food"], //Food Services
+    ["sick", "broken", "ill", "medicine:"], //Health Services
+    ["foreigner", "visa", "deported", "employement"], //International Students
+    ["heater", "plumbing", "light", "lighting", "electricity", "door", "repair", "washer", "dryer"], //Maintenance
+    ["roommate"], //Residence Life
+    ["logged", "account"], //Student Accounts
+    ["health", "counseling student", "life", "issue"], //Student Life Issues
+    ["pay", "payroll", "paycheck"], //Student Payroll
+    ["abroad"], //Study Abroad
+    ["computer", "technology", "tech", "charger", "cord"], //Technology
+    ["blank"], //title IX Coordinator
+    ["transcript"], //Transcript Request/Registrar
+    ["blank"], //University Engagement
+    ["writing", "paper"], //Writing Center
+    ["withdraw", "exit", "leave"] //Withdraw/Exit From College
+];
 const department = keyWords
 const locationA = ["Lewis Hall First Floor", "Hickman-Johnson-Furrow", "Lewis Hall First Floor Room 120", "Rosen Verdoorn Sports Center", "Hindman-Hobbs Center", 
                   "Olsen Student Center, Lower Level", "Olsen Student Center, Lower Level", "Hickman-Johnson-Furrow First Floor Room 109", "Krone Center", 
@@ -141,29 +170,36 @@ function inputFunction() {
     var img = document.getElementById("myImage");
     var j = document.getElementById("startingPoint").value;
     console.log(j);
-    searchStr = document.getElementById('searchStr').value.toLowerCase
+    searchStr = document.getElementById('searchStr').value
     document.querySelector("#searchPage").style.display = "none"
     document.querySelector("#infoPage").style.display = "block"
     const searchStrArray = searchStr.split(" ")
-    for (let i = 0; i < keyWords.length; i++) {
-        if (searchStr === keyWords[i]) {
-            peopleCurrentVarStr = people[i]
-            phoneNumberStr = phone[i]
-            peopleCurrentVarStr.setA
-            document.getElementById("department").innerHTML = department[i]
-            document.getElementById("location").innerHTML = locationA[i]
-            document.getElementById("people").innerHTML = peopleCurrentVarStr.replace(/,/g, "<br>")
-            document.getElementById("phone").innerHTML = phoneNumberStr.replace(/,/g, "<br />")
-            //Changing image based on index
-            img.src = imgs[j][i];
-            img.alt = imgs[j][i];
-        } 
+    console.log(searchStrArray)
+    for (let i = 0; i < searchStrArray.length; i++) {
+        for(var a = 0; a < termsOfKeyWords.length; a++) {
+            for(var b = 0; b < termsOfKeyWords[a].length; b++) {
+                if(termsOfKeyWords[a][b] === searchStrArray[i]){
+                    console.log(termsOfKeyWords[a][b] === searchStrArray[i])
+                    peopleCurrentVarStr = people[a]
+                    phoneNumberStr = phone[a]
+                    peopleCurrentVarStr.setA
+                    document.getElementById("department").innerHTML = department[a]
+                    document.getElementById("location").innerHTML = locationA[a]
+                    document.getElementById("people").innerHTML = peopleCurrentVarStr.replace(/,/g, "<br>")
+                    document.getElementById("phone").innerHTML = phoneNumberStr.replace(/,/g, "<br />")
+                    //Changing image based on index
+                    img.src = imgs[j][a];
+                    img.alt = imgs[j][a];
+                }
+            }
+        }
     }
 }
 console.log(keyWords.length)
 console.log(locationA.length)
 console.log(people.length)
 console.log(phone.length)
+
 
 /*
 if (word === "University Engagement") {
