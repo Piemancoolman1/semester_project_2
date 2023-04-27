@@ -158,16 +158,45 @@ let imgs = [
       "AGtoLH.png", "AGtoLH.png", "AGtoLH.png", "AGtoOSC.png",
       "AGtoLH.png", "AGtoLH.png", "AGtoKC.png", "AGtoLISC.png", "AGtoLH.png"]
         ];
+
 let walk =[
-    ["http://logok.org/wp-content/uploads/2014/03/abc-gold-logo.png","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/779px-NBC_logo.svg.png"],
-    ["https://s-media-cache-ak0.pinimg.com/originals/96/e6/d9/96e6d9e141ac42bf9aad1aaae0a15c61.jpg", "http://fontmeme.com/images/CNN-Logo.jpg"],
-    ["http://logok.org/wp-content/uploads/2014/12/TBS-logo-blue.png", "http://www.doddlenews.com/wp-content/uploads/2012/05/fox-tv-logo.jpg"]
+    ["photos/LH_1ST-FL.JPG", null, null],
+    ["photos/LIB.JPG", "photos/LIB_1ST-FL-STAIRS.JPG", "photos/LIB_AFC-OFF.JPG"],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null],
+    ["photos/RVSC.JPG", null, null],//Athletic Injuries
+    ["photos/RVSC.JPG", null, null],
+    ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_BOOKSTORE.JPG"],
+    ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", null], //Campus Ministry
+    ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", null],
+    ["photos/LIB.JPG", "photos/LIB_CSSA-OFF.JPG", null],
+    ["photos/KC.JPG", null, null],
+    ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_EPC-OFF.JPG"],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_1ST-FL-STAIRS.JPG", "photos/LH_RM209.JPG"],
+    ["photos/OSC.JPG", "photos/OSC_CAF.JPG", "photos/OSC_FC-OFF.JPG"],
+    ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_HS-OFF.JPG"],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null],
+    ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_RES-LIFE-OFF.JPG"],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM110", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
+    ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_TECH-OFF.JPG"],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM104", null],
+    ["photos/KC.JPG", null , null],
+    ["photos/LIB.JPG", "photos/LIB_1ST-FL-STAIRS.JPG", "photos/LIB_WC-OFF.JPG"],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
+    [null, null, null],
 ];
+
 console.log(searchStr)
 document.querySelector("#searchPage").style.display = "block"
 document.querySelector("#infoPage").style.display = "none"
 function inputFunction() {
     var img = document.getElementById("myImage");
+    var c1 = document.getElementById("c1");
+    var c2 = document.getElementById("c2");
+    var c3 = document.getElementById("c3");
     var j = document.getElementById("startingPoint").value;
     console.log(j);
     searchStr = document.getElementById('searchStr').value.toLowerCase()
@@ -188,17 +217,21 @@ function inputFunction() {
                     document.getElementById("people").innerHTML = peopleCurrentVarStr.replace(/,/g, "<br>")
                     document.getElementById("phone").innerHTML = phoneNumberStr.replace(/,/g, "<br />")
                     //Changing image based on index
+                    console.log(j)
+                    console.log(a);
+                    console.log(b);
                     img.src = imgs[j][a];
                     img.alt = imgs[j][a];
+                    c1.src = walk[a][0];
+                    c1.alt = walk[a][0];
+                    c2.src = walk[a][1];
+                    c2.alt = walk[a][1];
+                    c3.src = walk[a][2];
+                    c3.alt = walk[a][2];
                 }
             }
         }
     }
-}
-
-function GoBack(){
-    document.querySelector("#searchPage").style.display = "block"
-    document.querySelector("#infoPage").style.display = "none"
 }
 
 /* Buttons */
