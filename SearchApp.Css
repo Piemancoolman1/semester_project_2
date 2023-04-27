@@ -107,18 +107,6 @@ margin-left: 6px;
 margin-right: 6px;
 }
 
-#goBack{
-    background: url(Button2.png);
-    color: whitesmoke;
-    border: none;
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    margin-left: 250px;
-    margin-top: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
 /* Images */
 
 #ImagesDiv{
@@ -129,7 +117,7 @@ margin-top: 20px;
 border:rgb(92, 6, 16) solid 3px ;
 }
 
-.slider{
+slider{
     width:100%;
     max-width:435px;
     height: 600px;
