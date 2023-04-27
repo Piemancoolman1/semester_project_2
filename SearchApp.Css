@@ -1,5 +1,5 @@
 body{
-    background-image: url(Background.png);
+    background-image: url(assets/Background.png);
     background-size:100%;
 }
 
@@ -33,7 +33,7 @@ border-color:rgb(92, 6, 16) ;
 
 #button1{
 display: inline-block;
-background: url(button.png);
+background: url(assets/button.png);
 color: whitesmoke;
 border: none;
 width: 80px;
@@ -94,7 +94,7 @@ border: rgb(92, 6, 16) solid 3px;
 /* Map */
 
 #MapDiv{
-background-image: url(Main.png);
+background-image: url(assets/Main.png);
 background-size: cover;
 width: 550px;
 height: 500px;
@@ -109,7 +109,7 @@ margin-right: 6px;
 
 
 #goBack{
-    background: url(Button2.png);
+    background: url(assets/Button2.png);
     color: whitesmoke;
     border: none;
     width: 100px;
