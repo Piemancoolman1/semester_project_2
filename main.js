@@ -196,6 +196,11 @@ function inputFunction() {
     }
 }
 
+function GoBack(){
+    document.querySelector("#searchPage").style.display = "block"
+    document.querySelector("#infoPage").style.display = "none"
+}
+
 /* Buttons */
 
 
