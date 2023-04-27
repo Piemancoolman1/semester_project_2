@@ -44,6 +44,14 @@ border-radius: 10px;
 cursor: pointer;
 }
 
+#LogoMain{
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    top: 380px;
+    left: 530px;
+}
+
 /* Information Page */
 #infoPage{
     display:none;
@@ -109,8 +117,29 @@ margin-top: 20px;
 border:rgb(92, 6, 16) solid 3px ;
 }
 
+slider{
+    width:100%;
+    max-width:435px;
+    height: 600px;
+    position: relative;
+    overflow: hidden; /* <=== */
+}
 
-#leftButton{
+.slide{
+    width: 100%;
+    max-width: 435px;
+    height: 600px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-prev{
     height: 50px;
     width: 50px;
     top: 50%;
@@ -123,7 +152,7 @@ border:rgb(92, 6, 16) solid 3px ;
     position: absolute;
 }
 
-#rightButton{
+.btn-next{
     height: 50px;
     width: 50px;
     top: 50%;
