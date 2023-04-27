@@ -8,7 +8,7 @@ let termsOfKeyWords = [
     ["advising", "add", "dropping", "graduate"], //Advising
     ["blank"], //Athletic Injuires
     ["sports"], //Athletics
-    ["book", "bookstore"], //Bookstore
+    ["book", "bookstore", "books"], //Bookstore
     ["ministry"], //Campus Ministry
     ["safety", "security", "ticket", "parking"], //Campus Saftey and Security
     ["job", "internship"], //Career Services
@@ -157,7 +157,7 @@ let imgs = [
       "AGtoOSC.png", "AGtoLH.png", "AGtoSC.png", "AGtoOSC.png", "AGtoLH.png",
       "AGtoLH.png", "AGtoLH.png", "AGtoLH.png", "AGtoOSC.png",
       "AGtoLH.png", "AGtoLH.png", "AGtoKC.png", "AGtoLISC.png", "AGtoLH.png"]
-        ];
+     ];
 
 let walk =[
     ["photos/LH_1ST-FL.JPG", null, null],
@@ -175,6 +175,7 @@ let walk =[
     ["photos/OSC.JPG", "photos/OSC_CAF.JPG", "photos/OSC_FC-OFF.JPG"],
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_HS-OFF.JPG"],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null],
+    ["photos/FAC.JPG", null, null]
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_RES-LIFE-OFF.JPG"],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
@@ -185,8 +186,7 @@ let walk =[
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM104", null],
     ["photos/KC.JPG", null , null],
     ["photos/LIB.JPG", "photos/LIB_1ST-FL-STAIRS.JPG", "photos/LIB_WC-OFF.JPG"],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
-    [null, null, null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null]
 ];
 
 console.log(searchStr)
@@ -232,6 +232,11 @@ function inputFunction() {
             }
         }
     }
+}
+
+function GoBack(){
+    document.querySelector("#searchPage").style.display = "block"
+    document.querySelector("#infoPage").style.display = "none"
 }
 
 /* Buttons */
