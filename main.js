@@ -166,7 +166,7 @@ let walk =[
     ["photos/RVSC.JPG", null, null],//Athletic Injuries
     ["photos/RVSC.JPG", null, null],
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_BOOKSTORE.JPG"],
-    ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", "photos/OSC_CM"], //Campus Ministry
+    ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", "photos/OSC_CM.JPG"], //Campus Ministry
     ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", null],
     ["photos/LIB.JPG", "photos/LIB_CSSA-OFF.JPG", null],
     ["photos/KC.JPG", null, null],
