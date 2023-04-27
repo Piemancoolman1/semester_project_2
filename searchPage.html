@@ -49,7 +49,7 @@
       </select>
       <button type = "button" onClick="inputFunction()" id="button1" >Get Directions</button>
       <span id="howMuch"></span>
-    </form>
+       <img src="MLogo.png" id="LogoMain" alt="Logo"/>    </form>
   </div>
     <div id="infoPage">
       <div id="InfoDiv" class="Dis">
@@ -65,11 +65,22 @@
       <img src="AGtoBR.png" id = "myImage" alt="Images" width="550" height="500">
     </div>
     <div id="ImagesDiv" class="Dis">
-        <img src="Test1.png" alt="Images">
-       <button type="button" id="leftButton" onclick="TestNext"> < </button>
-      <button typr="button" id="rightButton"> > </button>
-      </button>
-    </div>
+       <div class="slider">
+          <!--- Slide 1 --->
+          <div class="slide">
+            <img src="Test1.png" alt="Test1"/>
+          </div>
+          <!--- Slide 2-->
+          <div class="slide">
+            <img src="Test2.png" alt="Test2"/>
+          </div>
+          <!-- Slide 3-->
+          <div class="slide">
+            <img src="Test3.png" alt="Test3"/>
+          </div>
+       </div>
+       <button type="button" class="btn btn-prev"> < </button>
+      <button typr="button" class="btn btn-next"> > </button>    
   </div>
   </form>
 </body>
