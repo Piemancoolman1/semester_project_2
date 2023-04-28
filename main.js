@@ -3,17 +3,17 @@ const keyWords = ["Academics",  "Academic Support Center ", "Advising", "Athleti
                   "Maintenance", "Residence Life", "Student Accounts", "Student Life Issues", "Student Payroll", "Study Abroad", "Technology", "Title IX Coordinator", 
                   "Transcript Request/Registrar", "University Engagement", "Writing Center", "Withdraw/Exit From College"]
 let termsOfKeyWords = [
-    ["finale, policies, procedures"], //Academics
-    ["tutoring, math, school, test"], //ASC
-    ["advising, add, dropping, graduate"], //Advising
-    ["concussion, injury"], //Athletic Injuires
-    ["sports, socker, baseball, football, basketball, reselling, cheerleading, swimming, dance"], //Athletics
-    ["book, bookstore, merch"], //Bookstore
-    ["ministry, religion, faith"], //Campus Ministry
-    ["safety, security, parking, escort"], //Campus Saftey and Security
+    ["finale", "policies", "procedures"], //Academics
+    ["tutoring", "math", "school", "test"], //ASC
+    ["advising", "add", "dropping", "graduate"], //Advising
+    ["concussion", "injury"], //Athletic Injuires
+    ["sports", "socker", "baseball", "football", "basketball", "reselling", "cheerleading", "swimming", "dance"], //Athletics
+    ["book", "bookstore", "merch"], //Bookstore
+    ["ministry", "religion", "faith"], //Campus Ministry
+    ["safety", "security", "parking", "escort"], //Campus Saftey and Security
     ["job", "internship"], //Career Services
     ["disabled", "501", "disability", "allergies", "dyslexia"], //Disabilities Services
-    ["therapy, counselor"], //Emotional or Personal Concerns
+    ["therapy", "counselor"], //Emotional or Personal Concerns
     ["aid", "loan", "scholarship"], //Financial Aid
     ["flex", "points", "meal", "plan", "food"], //Food Services
     ["sick", "broken", "ill", "medicine", "prescription"], //Health Services
@@ -25,7 +25,7 @@ let termsOfKeyWords = [
     ["pay", "payroll", "paycheck"], //Student Payroll
     ["abroad"], //Study Abroad
     ["computer", "technology", "tech", "charger", "cord"], //Technology
-    ["sexual, assault , sex, discrimination"], //title IX Coordinator
+    ["sexual", "assault", "sex", "discrimination"], //title IX Coordinator
     ["transcript", "registrar"], //Transcript Request/Registrar
     ["engagment"], //University Engagement
     ["writing", "paper", "essay"], //Writing Center
