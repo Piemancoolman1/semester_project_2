@@ -3,32 +3,32 @@ const keyWords = ["Academics",  "Academic Support Center ", "Advising", "Athleti
                   "Maintenance", "Residence Life", "Student Accounts", "Student Life Issues", "Student Payroll", "Study Abroad", "Technology", "Title IX Coordinator", 
                   "Transcript Request/Registrar", "University Engagement", "Writing Center", "Withdraw/Exit From College"]
 let termsOfKeyWords = [
-    ["finale"], //Academics
-    ["tutoring", "math", "school"], //ASC
-    ["advising", "add", "dropping", "graduate"], //Advising
-    ["blank"], //Athletic Injuires
-    ["sports"], //Athletics
-    ["book", "bookstore", "books"], //Bookstore
-    ["ministry"], //Campus Ministry
-    ["safety", "security", "ticket", "parking"], //Campus Saftey and Security
+    ["finale, policies, procedures"], //Academics
+    ["tutoring, math, school, test"], //ASC
+    ["advising, add, dropping, graduate"], //Advising
+    ["concussion, injury"], //Athletic Injuires
+    ["sports, socker, baseball, football, basketball, reselling, cheerleading, swimming, dance"], //Athletics
+    ["book, bookstore, merch"], //Bookstore
+    ["ministry, religion, faith"], //Campus Ministry
+    ["safety, security, parking, escort"], //Campus Saftey and Security
     ["job", "internship"], //Career Services
     ["disabled", "501", "disability", "allergies", "dyslexia"], //Disabilities Services
-    ["blank"], //Emotional or Personal Concerns
+    ["therapy, counselor"], //Emotional or Personal Concerns
     ["aid", "loan", "scholarship"], //Financial Aid
-    ["Food Service", "flex", "points", "meal", "plan", "food"], //Food Services
-    ["sick", "broken", "ill", "medicine:"], //Health Services
+    ["flex", "points", "meal", "plan", "food"], //Food Services
+    ["sick", "broken", "ill", "medicine", "prescription"], //Health Services
     ["foreigner", "visa", "deported", "employement"], //International Students
     ["heater", "plumbing", "light", "lighting", "electricity", "door", "repair", "washer", "dryer"], //Maintenance
     ["roommate"], //Residence Life
     ["logged", "account"], //Student Accounts
-    ["health", "counseling student", "life", "issue"], //Student Life Issues
+    ["health", "student", "life", "issue"], //Student Life Issues
     ["pay", "payroll", "paycheck"], //Student Payroll
     ["abroad"], //Study Abroad
     ["computer", "technology", "tech", "charger", "cord"], //Technology
-    ["blank"], //title IX Coordinator
-    ["transcript"], //Transcript Request/Registrar
-    ["blank"], //University Engagement
-    ["writing", "paper"], //Writing Center
+    ["sexual, assault , sex, discrimination"], //title IX Coordinator
+    ["transcript", "registrar"], //Transcript Request/Registrar
+    ["engagment"], //University Engagement
+    ["writing", "paper", "essay"], //Writing Center
     ["withdraw", "exit", "leave"] //Withdraw/Exit From College
 ];
 const department = keyWords
@@ -166,7 +166,7 @@ let walk =[
     ["photos/RVSC.JPG", null, null],//Athletic Injuries
     ["photos/RVSC.JPG", null, null],
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_BOOKSTORE.JPG"],
-    ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", "photos/OSC_CM.JPG"], //Campus Ministry
+    ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_CM.JPG"], //Campus Ministry
     ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", null],
     ["photos/LIB.JPG", "photos/LIB_CSSA-OFF.JPG", null],
     ["photos/KC.JPG", null, null],
@@ -179,7 +179,7 @@ let walk =[
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_RES-LIFE-OFF.JPG"],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM110", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_TECH-OFF.JPG"],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
@@ -278,29 +278,3 @@ prevSlide.addEventListener("click", function(){
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
 });
-console.log(keyWords.length)
-console.log(locationA.length)
-console.log(people.length)
-console.log(phone.length)
-
-
-/*
-if (word === "University Engagement") {
-    document.getElementById("department").innerHTML = "University Engagement";
-    document.getElementById("location").innerHTML = "Krone Center Communication, Media Relations, Website Photography, Marketing, Social Media";
-    document.getElementById("people").innerHTML = "Erin Edlund, Tasha Goodvin, Skyler McDermott";
-    document.getElementById("phone").innerHTML = "5411 5440 5108";
-}
-if (word === "University Engagement") {
-    document.getElementById("department").innerHTML = "University Engagement";
-    document.getElementById("location").innerHTML = "Physical Plant Bldg. Gaphic Design, Business Cards, Other Marketing services Mailroom Printing";
-    document.getElementById("people").innerHTML = "Randee Small, Lauretta Shaver";
-    document.getElementById("phone").innerHTML = "5262 5198";
-}
-if (word === "University Engagement") {
-    document.getElementById("department").innerHTML = "University Engagement";
-    document.getElementById("location").innerHTML = "Krone Center Sports Information";
-    document.getElementById("people").innerHTML = "Nick Buth";
-    document.getElementById("phone").innerHTML = "5306";
-}
-*/
