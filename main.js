@@ -50,10 +50,10 @@ var phoneNumberStr = ""
 //Array of images
 let imgs = [
     ["Maps/LHtoBR.png", "Maps/BRtoLIBR.png", "Maps/LHtoBR.png", "Maps/BRtoAG.png", "Maps/BRtoHPER.png",
-    "Maps/BRtoOSC.png", "Maps/BRtoOSC.png", "Maps/BRtoLIBR.png", "Maps/BRtoKC.png",
-    "Maps/LHtoBR.png", "Maps/BRtoOSC.png", "Maps/LHtoBR.png", "Maps/BRtoOSC.png",
-    "Maps/BRtoOSC.png", "Maps/LHtoBR.png", "Maps/BRtoFAC.png", "Maps/BRtoOSC.png", "Maps/LHtoBR.png",
-    "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/BRtoOSC.png",
+    "Maps/OSCtoBR.png", "Maps/OSCtoBR.png", "Maps/BRtoLIBR.png", "Maps/BRtoKC.png",
+    "Maps/LHtoBR.png", "Maps/OSCtoBR.png", "Maps/LHtoBR.png", "Maps/OSCtoBR.png",
+    "Maps/OSCtoBR.png", "Maps/LHtoBR.png", "Maps/BRtoFAC.png", "Maps/OSCtoBR.png", "Maps/LHtoBR.png",
+    "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/OSCtoBR.png",
     "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/BRtoKC.png", "Maps/BRtoLIBR.png", "Maps/LHtoBR.png",],
      ["Maps/CCtoLH.png", "Maps/CCtoLIBR.png", "Maps/CCtoLH.png", "Maps/CCtoAG.png", "Maps/CCtoHPER.png",
       "Maps/OSCoCC.png", "Maps/OSCoCC.png", "Maps/CCtoLIBR.png", "Maps/CCtoKC.png",
