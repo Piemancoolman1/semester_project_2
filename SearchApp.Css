@@ -89,7 +89,14 @@ border: rgb(92, 6, 16) solid 3px;
 .Text{
     font-size:24px ;
     text-decoration: underline;
+    padding-left: 5px;    
+    margin-bottom: 8px;   
 }
+
+.subText{                 
+  padding-left: 5px;      
+}                
+
 
 /* Map */
 
