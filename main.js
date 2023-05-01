@@ -3,33 +3,33 @@ const keyWords = ["Academics",  "Academic Support Center ", "Advising", "Athleti
                   "Maintenance", "Residence Life", "Student Accounts", "Student Life Issues", "Student Payroll", "Study Abroad", "Technology", "Title IX Coordinator", 
                   "Transcript Request/Registrar", "University Engagement", "Writing Center", "Withdraw/Exit From College"]
 let termsOfKeyWords = [
-    ["finale", "policies", "procedures, class, classroom"], //Academics
-  ["tutoring", "math", "school", "test"], //ASC
-  ["advising", "add", "dropping", "graduate"], //Advising
-  ["concussion", "injury"], //Athletic Injuries
-  ["sports", "socker", "baseball", "football", "basketball", "reselling", "cheerleading", "swimming", "dance"], //Athletics
-  ["book", "bookstore", "merch"], //Bookstore
-  ["ministry", "religion", "faith"], //Campus Ministry
-  ["safety", "security", "parking", "escort"], //Campus Safety and Security
-  ["job", "internship"], //Career Services
-  ["disabled", "501", "disability", "allergies", "dyslexia"], //Disabilities Services
-  ["therapy", "counselor", "depresion"], //Emotional or Personal Concerns
-  ["aid", "loan", "scholarship"], //Financial Aid
-  ["flex", "points", "meal", "plan", "food", "lunch"], //Food Services
-  ["sick", "broken", "ill", "medicine", "prescription" ,"std", "fever", "birth","pregnant", "pregnancy", "vaccine", "raped", "rape"], //Health Services
-  ["foreigner", "visa", "deported", "employment"], //International Students
-  ["heater", "plumbing", "light", "lighting", "electricity", "door", "repair", "washer", "dryer"], //Maintenance
-  ["roommate"], //Residence Life
-  ["logged", "account"], //Student Accounts
-  ["health", "student", "life", "issue"], //Student Life Issues
-  ["pay", "payroll", "paycheck"], //Student Payroll
-  ["abroad"], //Study Abroad
-  ["computer", "technology", "tech", "charger", "cord"], //Technology
-  ["sexual", "assault", "sex", "discrimination"], //title IX Coordinator
-  ["transcript", "registrar"], //Transcript Request/Registrar
-  ["engagement"], //University Engagement
-  ["writing", "paper", "essay"], //Writing Center
-  ["withdraw", "exit", "leave"] //Withdraw/Exit From College
+    ["finale"], //Academics
+    ["tutoring", "math", "school"], //ASC
+    ["advising", "add", "dropping", "graduate"], //Advising
+    ["blank"], //Athletic Injuires
+    ["sports"], //Athletics
+    ["book", "bookstore", "books"], //Bookstore
+    ["ministry"], //Campus Ministry
+    ["safety", "security", "ticket", "parking"], //Campus Saftey and Security
+    ["job", "internship"], //Career Services
+    ["disabled", "501", "disability", "allergies", "dyslexia"], //Disabilities Services
+    ["blank"], //Emotional or Personal Concerns
+    ["aid", "loan", "scholarship"], //Financial Aid
+    ["Food Service", "flex", "points", "meal", "plan", "food"], //Food Services
+    ["sick", "broken", "ill", "medicine:"], //Health Services
+    ["foreigner", "visa", "deported", "employement"], //International Students
+    ["heater", "plumbing", "light", "lighting", "electricity", "door", "repair", "washer", "dryer"], //Maintenance
+    ["roommate"], //Residence Life
+    ["logged", "account"], //Student Accounts
+    ["health", "counseling student", "life", "issue"], //Student Life Issues
+    ["pay", "payroll", "paycheck"], //Student Payroll
+    ["abroad"], //Study Abroad
+    ["computer", "technology", "tech", "charger", "cord"], //Technology
+    ["blank"], //title IX Coordinator
+    ["transcript"], //Transcript Request/Registrar
+    ["blank"], //University Engagement
+    ["writing", "paper"], //Writing Center
+    ["withdraw", "exit", "leave"] //Withdraw/Exit From College
 ];
 const department = keyWords
 const locationA = ["Lewis Hall First Floor", "Hickman-Johnson-Furrow", "Lewis Hall First Floor Room 120", "Rosen Verdoorn Sports Center", "Hindman-Hobbs Center", 
@@ -49,115 +49,115 @@ var peopleCurrentVarStr = ""
 var phoneNumberStr = ""
 //Array of images
 let imgs = [
-    ["Maps/LHtoBR.png", "Maps/BRtoLIBR.png", "Maps/LHtoBR.png", "Maps/BRtoAG.png", "Maps/BRtoHPER.png",
-    "Maps/BRtoOSC.png", "Maps/BRtoOSC.png", "Maps/BRtoLIBR.png", "Maps/BRtoKC.png",
-    "Maps/LHtoBR.png", "Maps/BRtoOSC.png", "Maps/LHtoBR.png", "Maps/BRtoOSC.png",
-    "Maps/BRtoOSC.png", "Maps/LHtoBR.png", "Maps/BRtoFAC.png", "Maps/BRtoOSC.png", "Maps/LHtoBR.png",
-    "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/BRtoOSC.png",
-    "Maps/LHtoBR.png", "Maps/LHtoBR.png", "Maps/BRtoKC.png", "Maps/BRtoLIBR.png", "Maps/LHtoBR.png",],
-     ["Maps/CCtoLH.png", "Maps/CCtoLIBR.png", "Maps/CCtoLH.png", "Maps/CCtoAG.png", "Maps/CCtoHPER.png",
-      "Maps/OSCoCC.png", "Maps/OSCoCC.png", "Maps/CCtoLIBR.png", "Maps/CCtoKC.png",
-      "Maps/CCtoLH.png", "Maps/OSCoCC.png", "Maps/CCtoLH.png", "Maps/OSCoCC.png",
-      "Maps/OSCoCC.png", "Maps/CCtoLH.png", "Maps/CCtoFAC.png", "Maps/OSCoCC.png", "Maps/CCtoLH.png",
-      "Maps/CCtoLH.png", "Maps/CCtoLH.png", "Maps/CCtoLH.png", "Maps/OSCoCC.png",
-      "Maps/CCtoLH.png", "Maps/CCtoLH.png", "Maps/CCtoKC.png", "Maps/CCtoLICC.png", "Maps/CCtoLH.png",],
-      ["Maps/LHtoEP.png", "Maps/LIBRtoEP.png", "Maps/LHtoEP.png", "Maps/AGtoEP.png", "Maps/HPERtoEP.png",
-      "Maps/OSCtoEP.png", "Maps/OSCtoEP.png", "Maps/LIBRtoEP.png", "Maps/EPtoKC.png",
-      "Maps/LHtoEP.png", "Maps/OSCtoEP.png", "Maps/LHtoEP.png", "Maps/OSCtoEP.png",
-      "Maps/OSCtoEP.png", "Maps/LHtoEP.png", "Maps/EPtoFAC.png", "Maps/OSCtoEP.png", "Maps/LHtoEP.png",
-      "Maps/LHtoEP.png", "Maps/LHtoEP.png", "Maps/LHtoEP.png", "Maps/OSCtoEP.png",
-      "Maps/LHtoEP.png", "Maps/LHtoEP.png", "Maps/EPtoKC.png", "Maps/LIBRtoEP.png", "Maps/LHtoEP.png",],
+    ["LHtoBR.png", "BRtoLIBR.png", "LHtoBR.png", "BRtoAG.png", "BRtoHPER.png",
+    "OSCtoBR.png", "OSCtoBR.png", "BRtoLIBR.png", "BRtoKC.png",
+    "LHtoBR.png", "OSCtoBR.png", "LHtoBR.png", "OSCtoBR.png",
+    "OSCtoBR.png", "LHtoBR.png", "BRtoFAC.png", "OSCtoBR.png", "LHtoBR.png",
+    "LHtoBR.png", "LHtoBR.png", "LHtoBR.png", "OSCtoBR.png",
+    "LHtoBR.png", "LHtoBR.png", "BRtoKC.png", "BRtoLIBR.png", "LHtoBR.png",],
+     ["CCtoLH.png", "CCtoLIBR.png", "CCtoLH.png", "CCtoAG.png", "CCtoHPER.png",
+      "OSCoCC.png", "OSCoCC.png", "CCtoLIBR.png", "CCtoKC.png",
+      "CCtoLH.png", "OSCoCC.png", "CCtoLH.png", "OSCoCC.png",
+      "OSCoCC.png", "CCtoLH.png", "CCtoFAC.png", "OSCoCC.png", "CCtoLH.png",
+      "CCtoLH.png", "CCtoLH.png", "CCtoLH.png", "OSCoCC.png",
+      "CCtoLH.png", "CCtoLH.png", "CCtoKC.png", "CCtoLICC.png", "CCtoLH.png",],
+      ["LHtoEP.png", "LIBRtoEP.png", "LHtoEP.png", "AGtoEP.png", "HPERtoEP.png",
+      "OSCtoEP.png", "OSCtoEP.png", "LIBRtoEP.png", "EPtoKC.png",
+      "LHtoEP.png", "OSCtoEP.png", "LHtoEP.png", "OSCtoEP.png",
+      "OSCtoEP.png", "LHtoEP.png", "EPtoFAC.png", "OSCtoEP.png", "LHtoEP.png",
+      "LHtoEP.png", "LHtoEP.png", "LHtoEP.png", "OSCtoEP.png",
+      "LHtoEP.png", "LHtoEP.png", "EPtoKC.png", "LIBRtoEP.png", "LHtoEP.png",],
       ["HPERtoLH.png", "HPERtoLIBR.png", "HPERtoLH.png", "AGtoHPER.png", "HPERtoHPER.png",
-      "Maps/HPERtoOSC.png", "Maps/HPERtoOSC.png", "Maps/HPERtoLIBR.png", "Maps/HPERtoKC.png",
-      "Maps/HPERtoLH.png", "Maps/HPERtoOSC.png", "Maps/HPERtoLH.png", "Maps/HPERtoOSC.png",
-      "Maps/HPERtoOSC.png", "Maps/HPERtoLH.png", "Maps/HPERtoFAC.png", "Maps/HPERtoOSC.png", "Maps/HPERtoLH.png",
-      "Maps/HPERtoLH.png", "Maps/HPERtoLH.png", "Maps/HPERtoLH.png", "Maps/HPERtoOSC.png",
-      "Maps/HPERtoLH.png", "Maps/HPERtoLH.png", "Maps/HPERtoKC.png", "Maps/HPERtoLIBR.png", "Maps/HPERtoLH.png",],
-      ["Maps/KNtoLH.png", "Maps/KNtoLIBR.png", "Maps/KNtoLH.png", "Maps/AGtoKN.png", "Maps/KNtoKN.png",
-      "Maps/OSCtoKN.png", "Maps/OSCtoKN.png", "Maps/KNtoLIBR.png", "Maps/KNtoKC.png",
-      "Maps/KNtoLH.png", "Maps/OSCtoKN.png", "Maps/KNtoLH.png", "Maps/OSCtoKN.png",
-      "Maps/OSCtoKN.png", "Maps/KNtoLH.png", "Maps/KNtoFAC.png", "Maps/OSCtoKN.png", "Maps/KNtoLH.png",
-      "Maps/KNtoLH.png", "Maps/KNtoLH.png", "Maps/KNtoLH.png", "Maps/OSCtoKN.png",
-      "Maps/KNtoLH.png", "Maps/KNtoLH.png", "Maps/KNtoKC.png", "Maps/KNtoLIBR.png", "Maps/KNtoLH.png",],
-      ["Maps/LHtoKC.png", "Maps/LIBRtoKC.png", "Maps/LHtoKC.png", "Maps/AGtoKC.png", "Maps/KCtoKC.png",
-      "Maps/OSCtoKC.png", "Maps/OSCtoKC.png", "Maps/LIBRtoKC.png", "Maps/KCtoKC.png",
-      "Maps/LHtoKC.png", "Maps/OSCtoKC.png", "Maps/LHtoKC.png", "Maps/OSCtoKC.png",
-      "Maps/OSCtoKC.png", "Maps/LHtoKC.png", "Maps/FACtoKC.png", "Maps/OSCtoKC.png", "Maps/LHtoKC.png",
-      "Maps/LHtoKC.png", "Maps/LHtoKC.png", "Maps/LHtoKC.png", "Maps/OSCtoKC.png",
-      "Maps/LHtoKC.png", "Maps/LHtoKC.png", "Maps/KCtoKC.png", "Maps/LIBRtoKC.png", "Maps/LHtoKC.png",],
-      ["Maps/LHtoLIBR.png", "Maps/LIBRtoLIBR.png", "Maps/LHtoLIBR.png", "Maps/AGtoLIBR.png", "Maps/LIBRtoLIBR.png",
-      "Maps/OSCtoLIBR.png", "Maps/OSCtoLIBR.png", "Maps/LIBRtoLIBR.png", "Maps/LIBRtoLIBR.png",
-      "Maps/LHtoLIBR.png", "Maps/OSCtoLIBR.png", "Maps/LHtoLIBR.png", "Maps/OSCtoLIBR.png",
-      "Maps/OSCtoLIBR.png", "Maps/LHtoLIBR.png", "Maps/LIBRtoFAC.png", "Maps/OSCtoLIBR.png", "Maps/LHtoLIBR.png",
-      "Maps/LHtoLIBR.png", "Maps/LHtoLIBR.png", "Maps/LHtoLIBR.png", "Maps/OSCtoLIBR.png",
-      "Maps/LHtoLIBR.png", "Maps/LHtoLIBR.png", "Maps/LIBRtoLIBR.png", "Maps/LIBRtoLIBR.png", "Maps/LHtoLIBR.png",],
-      ["Maps/LHtoLH.png", "Maps/LHtoLIBR.png", "Maps/LHtoLH.png", "Maps/AGtoLH.png", "Maps/LHtoLH.png",
-      "Maps/OSCtoLH.png", "Maps/OSCtoLH.png", "Maps/LHtoLIBR.png", "Maps/LHtoLH.png",
-      "Maps/LHtoLH.png", "Maps/OSCtoLH.png", "Maps/LHtoLH.png", "Maps/OSCtoLH.png",
-      "Maps/OSCtoLH.png", "Maps/LHtoLH.png", "Maps/LHtoFAC.png", "Maps/OSCtoLH.png", "Maps/LHtoLH.png",
-      "Maps/LHtoLH.png", "Maps/LHtoLH.png", "Maps/LHtoLH.png", "Maps/OSCtoLH.png",
-      "Maps/LHtoLH.png", "Maps/LHtoLH.png", "Maps/LHtoLH.png", "Maps/LHtoLIBR.png", "Maps/LHtoLH.png",],
-      ["Maps/LCtoLH.png", "Maps/LCtoLIBR.png", "Maps/LCtoLH.png", "Maps/AGtoLC.png", "Maps/HPERtoLC.png",
-      "Maps/OSCtoLC.png", "Maps/OSCtoLC.png", "Maps/LCtoLIBR.png", "Maps/LCtoKC.png",
-      "Maps/LCtoLH.png", "Maps/OSCtoLC.png", "Maps/LCtoLH.png", "Maps/OSCtoLC.png",
-      "Maps/OSCtoLC.png", "Maps/LCtoLH.png", "Maps/LCtoFAC.png", "Maps/OSCtoLC.png", "Maps/LCtoLH.png",
-      "Maps/LCtoLH.png", "Maps/LCtoLH.png", "Maps/LCtoLH.png", "Maps/OSCtoLC.png",
-      "Maps/LCtoLH.png", "Maps/LCtoLH.png", "Maps/LCtoKC.png", "Maps/LCtoLIBR.png", "Maps/LCtoLH.png",],
-      ["Maps/LHtoMAC.png", "Maps/LIBRtoMAC.png", "Maps/LHtoMAC.png", "Maps/AGtoMAC.png", "Maps/HPERtoMAC.png",
-      "Maps/OSCtoMAC.png", "Maps/OSCtoMAC.png", "Maps/LIBRtoMAC.png", "Maps/MACtoKC.png",
-      "Maps/LHtoMAC.png", "Maps/OSCtoMAC.png", "Maps/LHtoMAC.png", "Maps/OSCtoMAC.png",
-      "Maps/OSCtoMAC.png", "Maps/LHtoMAC.png", "Maps/MACtoFAC.png", "Maps/OSCtoMAC.png", "Maps/LHtoMAC.png",
-      "Maps/LHtoMAC.png", "Maps/LHtoMAC.png", "Maps/LHtoMAC.png", "Maps/OSCtoMAC.png",
-      "Maps/LHtoMAC.png", "Maps/LHtoMAC.png", "Maps/MACtoKC.png", "Maps/LIBRtoMAC.png", "Maps/LHtoMAC.png",],
-      ["Maps/LHtoFAC.png", "Maps/LIBRtoFAC.png", "Maps/LHtoFAC.png", "Maps/AGtoFAC.png", "Maps/HPERtoFAC.png",
-      "Maps/OSCtoFAC.png", "Maps/OSCtoFAC.png", "Maps/LIBRtoFAC.png", "Maps/KCtoFAC.png",
-      "Maps/LHtoFAC.png", "Maps/OSCtoFAC.png", "Maps/LHtoFAC.png", "Maps/OSCtoFAC.png",
-      "Maps/OSCtoFAC.png", "Maps/LHtoFAC.png", "Maps/FACtoFAC.png", "Maps/OSCtoFAC.png", "Maps/LHtoFAC.png",
-      "Maps/LHtoFAC.png", "Maps/LHtoFAC.png", "Maps/LHtoFAC.png", "Maps/OSCtoFAC.png",
-      "Maps/LHtoFAC.png", "Maps/LHtoFAC.png", "Maps/KCtoFAC.png", "Maps/LIBRtoFAC.png", "Maps/LHtoFAC.png",],
-      ["Maps/OSCtoLH.png", "Maps/OSCtoLIBR.png", "Maps/OSCtoLH.png", "Maps/AGtoOSC.png", "Maps/HPERtoOSC.png",
-      "Maps/OSCtoOSC.png", "Maps/OSCtoOSC.png", "Maps/OSCtoLIBR.png", "Maps/OSCtoKC.png",
-      "Maps/OSCtoLH.png", "Maps/OSCtoOSC.png", "Maps/OSCtoLH.png", "Maps/OSCtoOSC.png",
-      "Maps/OSCtoOSC.png", "Maps/OSCtoLH.png", "Maps/OSCtoFAC.png", "Maps/OSCtoOSC.png", "Maps/OSCtoLH.png",
-      "Maps/OSCtoLH.png", "Maps/OSCtoLH.png", "Maps/OSCtoLH.png", "Maps/OSCtoOSC.png",
-      "Maps/OSCtoLH.png", "Maps/OSCtoLH.png", "Maps/OSCtoKC.png", "Maps/OSCtoLIBR.png", "Maps/OSCtoLH.png",],
-      ["Maps/LHtoSC.png", "Maps/LIBRtoSC.png", "Maps/LHtoSC.png", "Maps/AGtoSC.png", "Maps/HPERtoSC.png",
-      "Maps/OSCtoSC.png", "Maps/OSCtoSC.png", "Maps/LIBRtoSC.png", "Maps/SCtoKC.png",
-      "Maps/LHtoSC.png", "Maps/OSCtoSC.png", "Maps/LHtoSC.png", "Maps/OSCtoSC.png",
-      "Maps/OSCtoSC.png", "Maps/LHtoSC.png", "Maps/SCtoSC.png", "Maps/OSCtoSC.png", "Maps/LHtoSC.png",
-      "Maps/LHtoSC.png", "Maps/LHtoSC.png", "Maps/LHtoSC.png", "Maps/OSCtoSC.png",
-      "Maps/LHtoSC.png", "Maps/LHtoSC.png", "Maps/SCtoKC.png", "Maps/LIBRtoSC.png", "Maps/LHtoSC.png",],
-      ["Maps/DHtoLH.png", "Maps/DHtoLIBR.png", "Maps/DHtoLH.png", "Maps/AGtoDH.png", "Maps/DHtoHPER.png",
-      "Maps/DHtoOSC.png", "Maps/DHtoOSC.png", "Maps/DHtoLIBR.png", "Maps/DHtoKC.png",
-      "Maps/DHtoLH.png", "Maps/DHtoOSC.png", "Maps/DHtoLH.png", "Maps/DHtoOSC.png",
-      "Maps/DHtoOSC.png", "Maps/DHtoLH.png", "Maps/DHtoSC.png", "Maps/DHtoOSC.png", "Maps/DHtoLH.png",
-      "Maps/DHtoLH.png", "Maps/DHtoLH.png", "Maps/DHtoLH.png", "Maps/DHtoOSC.png",
-      "Maps/DHtoLH.png", "Maps/DHtoLH.png", "Maps/DHtoKC.png", "Maps/DHtoLIBR.png", "Maps/DHtoLH.png",],
-      ["Maps/APtoLH.png", "Maps/APtoLIBR.png", "Maps/APtoLH.png", "Maps/APtoAG.png", "Maps/APtoHPER.png",
-      "Maps/APtoOSC.png", "Maps/APtoOSC.png", "Maps/APtoLIBR.png", "Maps/APtoKC.png",
-      "Maps/APtoLH.png", "Maps/APtoOSC.png", "Maps/APtoLH.png", "Maps/APtoOSC.png",
-      "Maps/APtoOSC.png", "Maps/APtoLH.png", "Maps/APtoSC.png", "Maps/APtoOSC.png", "Maps/APtoLH.png",
-      "Maps/APtoLH.png", "Maps/APtoLH.png", "Maps/APtoLH.png", "Maps/APtoOSC.png",
-      "Maps/APtoLH.png", "Maps/APtoLH.png", "Maps/APtoKC.png", "Maps/APtoLISC.png", "Maps/APtoLH.png",],
-      ["Maps/RDtoLH.png", "Maps/RDtoLIBR.png", "Maps/RDtoLH.png", "Maps/RDtoAG.png", "Maps/RDtoHPER.png",
-      "Maps/RDtoOSC.png", "Maps/RDtoOSC.png", "Maps/RDtoLIBR.png", "Maps/RDtoKC.png",
-      "Maps/RDtoLH.png", "Maps/RDtoOSC.png", "Maps/RDtoLH.png", "Maps/RDtoOSC.png",
-      "Maps/RDtoOSC.png", "Maps/RDtoLH.png", "Maps/RDtoSC.png", "Maps/RDtoOSC.png", "Maps/RDtoLH.png",
-      "Maps/RDtoLH.png", "Maps/RDtoLH.png", "Maps/RDtoLH.png", "Maps/RDtoOSC.png",
-      "Maps/RDtoLH.png", "Maps/RDtoLH.png", "Maps/RDtoKC.png", "Maps/RDtoLIBR.png", "Maps/RDtoLH.png",],
-      ["Maps/PLXtoLH.png", "Maps/PLXtoLIBR.png", "Maps/PLXtoLH.png", "Maps/PLXtoAG.png", "Maps/PLXtoHPER.png",
-      "Maps/PLXtoOSC.png", "Maps/PLXtoOSC.png", "Maps/PLXtoLIBR.png", "Maps/PLXtoKC.png",
-      "Maps/PLXtoLH.png", "Maps/PLXtoOSC.png", "Maps/PLXtoLH.png", "Maps/PLXtoOSC.png",
-      "Maps/PLXtoOSC.png", "Maps/PLXtoLH.png", "Maps/PLXtoSC.png", "Maps/PLXtoOSC.png", "Maps/PLXtoLH.png",
-      "Maps/PLXtoLH.png", "Maps/PLXtoLH.png", "Maps/PLXtoLH.png", "Maps/PLXtoOSC.png",
-      "Maps/PLXtoLH.png", "Maps/PLXtoLH.png", "Maps/PLXtoKC.png", "Maps/PLXtoLIBR.png", "Maps/PLXtoLH.png",],
-      ["Maps/AGtoLH.png", "Maps/AGtoLIBR.png", "Maps/AGtoLH.png", "Maps/AGtoAG.png", "Maps/AGtoHPER.png",
-      "Maps/AGtoOSC.png", "Maps/AGtoOSC.png", "Maps/AGtoLIBR.png", "Maps/AGtoKC.png",
-      "Maps/AGtoLH.png", "Maps/AGtoOSC.png", "Maps/AGtoLH.png", "Maps/AGtoOSC.png",
-      "Maps/AGtoOSC.png", "Maps/AGtoLH.png", "Maps/AGtoSC.png", "Maps/AGtoOSC.png", "Maps/AGtoLH.png",
-      "Maps/AGtoLH.png", "Maps/AGtoLH.png", "Maps/AGtoLH.png", "Maps/AGtoOSC.png",
-      "Maps/AGtoLH.png", "Maps/AGtoLH.png", "Maps/AGtoKC.png", "Maps/AGtoLISC.png", "Maps/AGtoLH.png"]
-        ];
+      "HPERtoOSC.png", "HPERtoOSC.png", "HPERtoLIBR.png", "HPERtoKC.png",
+      "HPERtoLH.png", "HPERtoOSC.png", "HPERtoLH.png", "HPERtoOSC.png",
+      "HPERtoOSC.png", "HPERtoLH.png", "HPERtoFAC.png", "HPERtoOSC.png", "HPERtoLH.png",
+      "HPERtoLH.png", "HPERtoLH.png", "HPERtoLH.png", "HPERtoOSC.png",
+      "HPERtoLH.png", "HPERtoLH.png", "HPERtoKC.png", "HPERtoLIBR.png", "HPERtoLH.png",],
+      ["KNtoLH.png", "KNtoLIBR.png", "KNtoLH.png", "AGtoKN.png", "KNtoKN.png",
+      "OSCtoKN.png", "OSCtoKN.png", "KNtoLIBR.png", "KNtoKC.png",
+      "KNtoLH.png", "OSCtoKN.png", "KNtoLH.png", "OSCtoKN.png",
+      "OSCtoKN.png", "KNtoLH.png", "KNtoFAC.png", "OSCtoKN.png", "KNtoLH.png",
+      "KNtoLH.png", "KNtoLH.png", "KNtoLH.png", "OSCtoKN.png",
+      "KNtoLH.png", "KNtoLH.png", "KNtoKC.png", "KNtoLIBR.png", "KNtoLH.png",],
+      ["LHtoKC.png", "LIBRtoKC.png", "LHtoKC.png", "AGtoKC.png", "KCtoKC.png",
+      "OSCtoKC.png", "OSCtoKC.png", "LIBRtoKC.png", "KCtoKC.png",
+      "LHtoKC.png", "OSCtoKC.png", "LHtoKC.png", "OSCtoKC.png",
+      "OSCtoKC.png", "LHtoKC.png", "FACtoKC.png", "OSCtoKC.png", "LHtoKC.png",
+      "LHtoKC.png", "LHtoKC.png", "LHtoKC.png", "OSCtoKC.png",
+      "LHtoKC.png", "LHtoKC.png", "KCtoKC.png", "LIBRtoKC.png", "LHtoKC.png",],
+      ["LHtoLIBR.png", "LIBRtoLIBR.png", "LHtoLIBR.png", "AGtoLIBR.png", "LIBRtoLIBR.png",
+      "OSCtoLIBR.png", "OSCtoLIBR.png", "LIBRtoLIBR.png", "LIBRtoLIBR.png",
+      "LHtoLIBR.png", "OSCtoLIBR.png", "LHtoLIBR.png", "OSCtoLIBR.png",
+      "OSCtoLIBR.png", "LHtoLIBR.png", "LIBRtoFAC.png", "OSCtoLIBR.png", "LHtoLIBR.png",
+      "LHtoLIBR.png", "LHtoLIBR.png", "LHtoLIBR.png", "OSCtoLIBR.png",
+      "LHtoLIBR.png", "LHtoLIBR.png", "LIBRtoLIBR.png", "LIBRtoLIBR.png", "LHtoLIBR.png",],
+      ["LHtoLH.png", "LHtoLIBR.png", "LHtoLH.png", "AGtoLH.png", "LHtoLH.png",
+      "OSCtoLH.png", "OSCtoLH.png", "LHtoLIBR.png", "LHtoLH.png",
+      "LHtoLH.png", "OSCtoLH.png", "LHtoLH.png", "OSCtoLH.png",
+      "OSCtoLH.png", "LHtoLH.png", "LHtoFAC.png", "OSCtoLH.png", "LHtoLH.png",
+      "LHtoLH.png", "LHtoLH.png", "LHtoLH.png", "OSCtoLH.png",
+      "LHtoLH.png", "LHtoLH.png", "LHtoLH.png", "LHtoLIBR.png", "LHtoLH.png",],
+      ["LCtoLH.png", "LCtoLIBR.png", "LCtoLH.png", "AGtoLC.png", "HPERtoLC.png",
+      "OSCtoLC.png", "OSCtoLC.png", "LCtoLIBR.png", "LCtoKC.png",
+      "LCtoLH.png", "OSCtoLC.png", "LCtoLH.png", "OSCtoLC.png",
+      "OSCtoLC.png", "LCtoLH.png", "LCtoFAC.png", "OSCtoLC.png", "LCtoLH.png",
+      "LCtoLH.png", "LCtoLH.png", "LCtoLH.png", "OSCtoLC.png",
+      "LCtoLH.png", "LCtoLH.png", "LCtoKC.png", "LCtoLIBR.png", "LCtoLH.png",],
+      ["LHtoMAC.png", "LIBRtoMAC.png", "LHtoMAC.png", "AGtoMAC.png", "HPERtoMAC.png",
+      "OSCtoMAC.png", "OSCtoMAC.png", "LIBRtoMAC.png", "MACtoKC.png",
+      "LHtoMAC.png", "OSCtoMAC.png", "LHtoMAC.png", "OSCtoMAC.png",
+      "OSCtoMAC.png", "LHtoMAC.png", "MACtoFAC.png", "OSCtoMAC.png", "LHtoMAC.png",
+      "LHtoMAC.png", "LHtoMAC.png", "LHtoMAC.png", "OSCtoMAC.png",
+      "LHtoMAC.png", "LHtoMAC.png", "MACtoKC.png", "LIBRtoMAC.png", "LHtoMAC.png",],
+      ["LHtoFAC.png", "LIBRtoFAC.png", "LHtoFAC.png", "AGtoFAC.png", "HPERtoFAC.png",
+      "OSCtoFAC.png", "OSCtoFAC.png", "LIBRtoFAC.png", "KCtoFAC.png",
+      "LHtoFAC.png", "OSCtoFAC.png", "LHtoFAC.png", "OSCtoFAC.png",
+      "OSCtoFAC.png", "LHtoFAC.png", "FACtoFAC.png", "OSCtoFAC.png", "LHtoFAC.png",
+      "LHtoFAC.png", "LHtoFAC.png", "LHtoFAC.png", "OSCtoFAC.png",
+      "LHtoFAC.png", "LHtoFAC.png", "KCtoFAC.png", "LIBRtoFAC.png", "LHtoFAC.png",],
+      ["OSCtoLH.png", "OSCtoLIBR.png", "OSCtoLH.png", "AGtoOSC.png", "HPERtoOSC.png",
+      "OSCtoOSC.png", "OSCtoOSC.png", "OSCtoLIBR.png", "OSCtoKC.png",
+      "OSCtoLH.png", "OSCtoOSC.png", "OSCtoLH.png", "OSCtoOSC.png",
+      "OSCtoOSC.png", "OSCtoLH.png", "OSCtoFAC.png", "OSCtoOSC.png", "OSCtoLH.png",
+      "OSCtoLH.png", "OSCtoLH.png", "OSCtoLH.png", "OSCtoOSC.png",
+      "OSCtoLH.png", "OSCtoLH.png", "OSCtoKC.png", "OSCtoLIBR.png", "OSCtoLH.png",],
+      ["LHtoSC.png", "LIBRtoSC.png", "LHtoSC.png", "AGtoSC.png", "HPERtoSC.png",
+      "OSCtoSC.png", "OSCtoSC.png", "LIBRtoSC.png", "SCtoKC.png",
+      "LHtoSC.png", "OSCtoSC.png", "LHtoSC.png", "OSCtoSC.png",
+      "OSCtoSC.png", "LHtoSC.png", "SCtoSC.png", "OSCtoSC.png", "LHtoSC.png",
+      "LHtoSC.png", "LHtoSC.png", "LHtoSC.png", "OSCtoSC.png",
+      "LHtoSC.png", "LHtoSC.png", "SCtoKC.png", "LIBRtoSC.png", "LHtoSC.png",],
+      ["DHtoLH.png", "DHtoLIBR.png", "DHtoLH.png", "AGtoDH.png", "DHtoHPER.png",
+      "DHtoOSC.png", "DHtoOSC.png", "DHtoLIBR.png", "DHtoKC.png",
+      "DHtoLH.png", "DHtoOSC.png", "DHtoLH.png", "DHtoOSC.png",
+      "DHtoOSC.png", "DHtoLH.png", "DHtoSC.png", "DHtoOSC.png", "DHtoLH.png",
+      "DHtoLH.png", "DHtoLH.png", "DHtoLH.png", "DHtoOSC.png",
+      "DHtoLH.png", "DHtoLH.png", "DHtoKC.png", "DHtoLIBR.png", "DHtoLH.png",],
+      ["APtoLH.png", "APtoLIBR.png", "APtoLH.png", "APtoAG.png", "APtoHPER.png",
+      "APtoOSC.png", "APtoOSC.png", "APtoLIBR.png", "APtoKC.png",
+      "APtoLH.png", "APtoOSC.png", "APtoLH.png", "APtoOSC.png",
+      "APtoOSC.png", "APtoLH.png", "APtoSC.png", "APtoOSC.png", "APtoLH.png",
+      "APtoLH.png", "APtoLH.png", "APtoLH.png", "APtoOSC.png",
+      "APtoLH.png", "APtoLH.png", "APtoKC.png", "APtoLISC.png", "APtoLH.png",],
+      ["RDtoLH.png", "RDtoLIBR.png", "RDtoLH.png", "RDtoAG.png", "RDtoHPER.png",
+      "RDtoOSC.png", "RDtoOSC.png", "RDtoLIBR.png", "RDtoKC.png",
+      "RDtoLH.png", "RDtoOSC.png", "RDtoLH.png", "RDtoOSC.png",
+      "RDtoOSC.png", "RDtoLH.png", "RDtoSC.png", "RDtoOSC.png", "RDtoLH.png",
+      "RDtoLH.png", "RDtoLH.png", "RDtoLH.png", "RDtoOSC.png",
+      "RDtoLH.png", "RDtoLH.png", "RDtoKC.png", "RDtoLIBR.png", "RDtoLH.png",],
+      ["PLXtoLH.png", "PLXtoLIBR.png", "PLXtoLH.png", "PLXtoAG.png", "PLXtoHPER.png",
+      "PLXtoOSC.png", "PLXtoOSC.png", "PLXtoLIBR.png", "PLXtoKC.png",
+      "PLXtoLH.png", "PLXtoOSC.png", "PLXtoLH.png", "PLXtoOSC.png",
+      "PLXtoOSC.png", "PLXtoLH.png", "PLXtoSC.png", "PLXtoOSC.png", "PLXtoLH.png",
+      "PLXtoLH.png", "PLXtoLH.png", "PLXtoLH.png", "PLXtoOSC.png",
+      "PLXtoLH.png", "PLXtoLH.png", "PLXtoKC.png", "PLXtoLIBR.png", "PLXtoLH.png",],
+      ["AGtoLH.png", "AGtoLIBR.png", "AGtoLH.png", "AGtoAG.png", "AGtoHPER.png",
+      "AGtoOSC.png", "AGtoOSC.png", "AGtoLIBR.png", "AGtoKC.png",
+      "AGtoLH.png", "AGtoOSC.png", "AGtoLH.png", "AGtoOSC.png",
+      "AGtoOSC.png", "AGtoLH.png", "AGtoSC.png", "AGtoOSC.png", "AGtoLH.png",
+      "AGtoLH.png", "AGtoLH.png", "AGtoLH.png", "AGtoOSC.png",
+      "AGtoLH.png", "AGtoLH.png", "AGtoKC.png", "AGtoLISC.png", "AGtoLH.png"]
+     ];
 
 let walk =[
     ["photos/LH_1ST-FL.JPG", null, null],
@@ -166,7 +166,7 @@ let walk =[
     ["photos/RVSC.JPG", null, null],//Athletic Injuries
     ["photos/RVSC.JPG", null, null],
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_BOOKSTORE.JPG"],
-    ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_CM.JPG"], //Campus Ministry
+    ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", null], //Campus Ministry
     ["photos/OSC.JPG", "photos/OSC_CSSB-OFF.JPG", null],
     ["photos/LIB.JPG", "photos/LIB_CSSA-OFF.JPG", null],
     ["photos/KC.JPG", null, null],
@@ -179,7 +179,7 @@ let walk =[
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_RES-LIFE-OFF.JPG"],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM110", null],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_TECH-OFF.JPG"],
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
@@ -278,3 +278,29 @@ prevSlide.addEventListener("click", function(){
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
 });
+console.log(keyWords.length)
+console.log(locationA.length)
+console.log(people.length)
+console.log(phone.length)
+
+
+/*
+if (word === "University Engagement") {
+    document.getElementById("department").innerHTML = "University Engagement";
+    document.getElementById("location").innerHTML = "Krone Center Communication, Media Relations, Website Photography, Marketing, Social Media";
+    document.getElementById("people").innerHTML = "Erin Edlund, Tasha Goodvin, Skyler McDermott";
+    document.getElementById("phone").innerHTML = "5411 5440 5108";
+}
+if (word === "University Engagement") {
+    document.getElementById("department").innerHTML = "University Engagement";
+    document.getElementById("location").innerHTML = "Physical Plant Bldg. Gaphic Design, Business Cards, Other Marketing services Mailroom Printing";
+    document.getElementById("people").innerHTML = "Randee Small, Lauretta Shaver";
+    document.getElementById("phone").innerHTML = "5262 5198";
+}
+if (word === "University Engagement") {
+    document.getElementById("department").innerHTML = "University Engagement";
+    document.getElementById("location").innerHTML = "Krone Center Sports Information";
+    document.getElementById("people").innerHTML = "Nick Buth";
+    document.getElementById("phone").innerHTML = "5306";
+}
+*/
