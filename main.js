@@ -3,33 +3,33 @@ const keyWords = ["Academics",  "Academic Support Center ", "Advising", "Athleti
                   "Maintenance", "Residence Life", "Student Accounts", "Student Life Issues", "Student Payroll", "Study Abroad", "Technology", "Title IX Coordinator", 
                   "Transcript Request/Registrar", "University Engagement", "Writing Center", "Withdraw/Exit From College"]
 let termsOfKeyWords = [
-    ["finale", "policies", "procedures"], //Academics
-    ["tutoring", "math", "school", "test"], //ASC
-    ["advising", "add", "dropping", "graduate"], //Advising
-    ["concussion", "injury"], //Athletic Injuires
-    ["sports", "socker", "baseball", "football", "basketball", "reselling", "cheerleading", "swimming", "dance"], //Athletics
-    ["book", "bookstore", "merch"], //Bookstore
-    ["ministry", "religion", "faith"], //Campus Ministry
-    ["safety", "security", "parking", "escort"], //Campus Saftey and Security
-    ["job", "internship"], //Career Services
-    ["disabled", "501", "disability", "allergies", "dyslexia"], //Disabilities Services
-    ["therapy", "counselor"], //Emotional or Personal Concerns
-    ["aid", "loan", "scholarship"], //Financial Aid
-    ["flex", "points", "meal", "plan", "food"], //Food Services
-    ["sick", "broken", "ill", "medicine", "prescription"], //Health Services
-    ["foreigner", "visa", "deported", "employement"], //International Students
-    ["heater", "plumbing", "light", "lighting", "electricity", "door", "repair", "washer", "dryer"], //Maintenance
-    ["roommate"], //Residence Life
-    ["logged", "account"], //Student Accounts
-    ["health", "student", "life", "issue"], //Student Life Issues
-    ["pay", "payroll", "paycheck"], //Student Payroll
-    ["abroad"], //Study Abroad
-    ["computer", "technology", "tech", "charger", "cord"], //Technology
-    ["sexual", "assault", "sex", "discrimination"], //title IX Coordinator
-    ["transcript", "registrar"], //Transcript Request/Registrar
-    ["engagment"], //University Engagement
-    ["writing", "paper", "essay"], //Writing Center
-    ["withdraw", "exit", "leave"] //Withdraw/Exit From College
+    ["finale", "policies", "procedures, class, classroom"], //Academics
+  ["tutoring", "math", "school", "test"], //ASC
+  ["advising", "add", "dropping", "graduate"], //Advising
+  ["concussion", "injury"], //Athletic Injuries
+  ["sports", "socker", "baseball", "football", "basketball", "reselling", "cheerleading", "swimming", "dance"], //Athletics
+  ["book", "bookstore", "merch"], //Bookstore
+  ["ministry", "religion", "faith"], //Campus Ministry
+  ["safety", "security", "parking", "escort"], //Campus Safety and Security
+  ["job", "internship"], //Career Services
+  ["disabled", "501", "disability", "allergies", "dyslexia"], //Disabilities Services
+  ["therapy", "counselor", "depresion"], //Emotional or Personal Concerns
+  ["aid", "loan", "scholarship"], //Financial Aid
+  ["flex", "points", "meal", "plan", "food", "lunch"], //Food Services
+  ["sick", "broken", "ill", "medicine", "prescription" ,"std", "fever", "birth","pregnant", "pregnancy", "vaccine", "raped", "rape"], //Health Services
+  ["foreigner", "visa", "deported", "employment"], //International Students
+  ["heater", "plumbing", "light", "lighting", "electricity", "door", "repair", "washer", "dryer"], //Maintenance
+  ["roommate"], //Residence Life
+  ["logged", "account"], //Student Accounts
+  ["health", "student", "life", "issue"], //Student Life Issues
+  ["pay", "payroll", "paycheck"], //Student Payroll
+  ["abroad"], //Study Abroad
+  ["computer", "technology", "tech", "charger", "cord"], //Technology
+  ["sexual", "assault", "sex", "discrimination"], //title IX Coordinator
+  ["transcript", "registrar"], //Transcript Request/Registrar
+  ["engagement"], //University Engagement
+  ["writing", "paper", "essay"], //Writing Center
+  ["withdraw", "exit", "leave"] //Withdraw/Exit From College
 ];
 const department = keyWords
 const locationA = ["Lewis Hall First Floor", "Hickman-Johnson-Furrow", "Lewis Hall First Floor Room 120", "Rosen Verdoorn Sports Center", "Hindman-Hobbs Center", 
