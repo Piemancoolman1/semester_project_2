@@ -8,7 +8,7 @@ let termsOfKeyWords = [
   ["advising", "add", "dropping", "graduate"], //Advising
   ["concussion", "injury"], //Athletic Injuries
   ["sports", "socker", "baseball", "football", "basketball", "reselling", "cheerleading", "swimming", "dance"], //Athletics
-  ["book", "bookstore", "merch"], //Bookstore
+  ["book", "bookstore", "merch", "books"], //Bookstore
   ["ministry", "religion", "faith"], //Campus Ministry
   ["safety", "security", "parking", "escort"], //Campus Safety and Security
   ["job", "internship"], //Career Services
@@ -177,16 +177,16 @@ let walk =[
     ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null],
     ["photos/FAC.JPG", null, null]
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_RES-LIFE-OFF.JPG"],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM100", null],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM100.JPG", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM100.JPG", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null],
     ["photos/OSC.JPG", "photos/OSC_STAIRS.JPG", "photos/OSC_TECH-OFF.JPG"],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM104", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null],
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM104.JPG", null],
     ["photos/KC.JPG", null , null],
     ["photos/LIB.JPG", "photos/LIB_1ST-FL-STAIRS.JPG", "photos/LIB_WC-OFF.JPG"],
-    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120", null]
+    ["photos/LH_1ST-FL.JPG", "photos/LH_RM120.JPG", null]
 ];
 
 console.log(searchStr)
